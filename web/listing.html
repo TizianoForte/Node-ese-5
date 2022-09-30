@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>Open Console to view all planets</h1>
+        <script>
+            async function fetchPlanets() {
+                const response = await fetch("http://localhost:3000/planets");
+                const planets = await response.json();
+                console.log(planets);
+            }
+
+            fetchPlanets();
+        </script>
+    </body>
+</html>
