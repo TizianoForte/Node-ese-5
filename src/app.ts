@@ -10,7 +10,7 @@ import {
     validationErrorMiddleware,
 } from "./lib/validation";
 
-const app = express(
+const app = express();
 
 app.use(express.json());
 
